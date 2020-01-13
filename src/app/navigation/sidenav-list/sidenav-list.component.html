@@ -1,0 +1,19 @@
+<!-- <p>sidenav-list works!</p> -->
+<mat-nav-list class='side-nav-list'>
+    <a  mat-list-item routerlink='/signup' (click)='onToggleClose()'> 
+        <mat-icon >account_circle</mat-icon>
+        <span>Sign Up</span>
+    </a>
+    <a  mat-list-item routerlink='/signin' (click)='onToggleClose()'> 
+        <mat-icon>input</mat-icon>
+        <span>Sign In</span>
+    </a>
+    <a  mat-list-item routerlink='/accomodation' (click)='onToggleClose()'> 
+        <mat-icon>hotel</mat-icon>
+        <span>Accomodation</span>
+    </a>
+    <a  mat-list-item routerlink='offers' (click)='onToggleClose()'> 
+        <mat-icon>accessibility</mat-icon>
+        <span>Trip Booking</span>
+    </a>
+</mat-nav-list>

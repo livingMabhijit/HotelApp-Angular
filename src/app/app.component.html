@@ -1,3 +1,22 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <app-sidenav-list (closeSideNav)='sidenav.close()'></app-sidenav-list>
+  </mat-sidenav>
 
-<h1>The hotel App</h1>
+  <mat-sidenav-content>
+    <app-header (sideNavToggle)='sidenav.toggle()'></app-header>
+    <app-navtabs></app-navtabs>
+  </mat-sidenav-content>
+
+
+
+
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+
+
+
+
+
+<!-- <h1>The hotel App</h1> -->
